@@ -1,4 +1,4 @@
-package conta
+package digiOneBank
 
 class Pessoa {
     var nome: String = "Javier"
