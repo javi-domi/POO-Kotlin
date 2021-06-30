@@ -8,12 +8,19 @@ class Pessoa {
     inner class Enderco {
         var rua: String = "Rua Real"
     }
+
+    constructor()
+
+    fun uneInfo() {
+        println("Nome: " + nome )
+        println("CPF: " + cpf )
+        println("Endereço: " + Enderco().rua)
+
+    }
 }
 
 fun main() {
     val javier = Pessoa()
-    println("Nome: " + javier.nome )
-    println("CPF: " + javier.cpf )
-    println("Endereço: " + javier.Enderco().rua)
+    println(javier.uneInfo())
 }
 
