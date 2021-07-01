@@ -1,26 +1,9 @@
 package digiOneBank
 
-class Pessoa {
-    var nome: String = "Javier"
-    var cpf: String = "066.029.237-81"
-    private set
+abstract class Pessoa (
+    val nome: String,
+    val cpf: String
+)
 
-    inner class Enderco {
-        var rua: String = "Rua Real"
-    }
 
-    constructor()
-
-    fun uneInfo() {
-        println("Nome: " + nome )
-        println("CPF: " + cpf )
-        println("Endereço: " + Enderco().rua)
-
-    }
-}
-
-fun main() {
-    val javier = Pessoa()
-    println(javier.uneInfo())
-}
 
